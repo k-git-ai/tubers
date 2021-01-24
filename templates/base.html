@@ -45,6 +45,12 @@
 
 {% endblock %}
 
+  {% if messages %}
+      {% for m in messages %}
+          {{ m }}
+      {% endfor %}
+  {% endif %}
+
   <!-- footer -->
 {% include 'includes/footer.html' %}
   <!-- footer ends -->
